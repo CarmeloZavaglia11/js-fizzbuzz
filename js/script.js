@@ -19,7 +19,7 @@
 // SECOND ALTERNATIVE
 
 for (var i = 1; i <= 100; i++) {
-    parola= '';
+    var parola= '';
     if ((i % 3 == 0) && (i % 5 == 0)) {
         parola = 'FizzBuzz';
     } else if (i % 5 == 0) {
