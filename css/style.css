@@ -4,20 +4,24 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow: hidden;
+}
+
 .screen {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background-color: black;
 }
 
 video {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
-    z-index: 0;
+    height: 100%;
+    min-width: 100%;
+    min-height: 56.25vw;
 }
 
 .list {
@@ -37,17 +41,13 @@ video {
     display: none;
 }
 
-
-
-.list h1 {
+h1 {
+    color: white;
     text-transform: uppercase;
     font-size: 50px;
+    z-index: 2;
 }
 
 .list ul {
     list-style: none;
-}
-
-.list ul li{
-    font
 }
