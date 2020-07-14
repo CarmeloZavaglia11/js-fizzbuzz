@@ -10,7 +10,14 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: yellow;
+    background-color: black;
+}
+
+video {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
 }
 
 .list {
@@ -20,7 +27,17 @@
     height: 50%;
     background-color: white;
     overflow-y: scroll;
+    border-radius: 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    z-index: 2;
 }
+
+.list::-webkit-scrollbar {
+    display: none;
+}
+
+
 
 .list h1 {
     text-transform: uppercase;
